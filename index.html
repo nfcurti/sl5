@@ -15,10 +15,123 @@
   <link rel="apple-touch-icon" sizes="180x180" href="./assets/apple-icon-180x180.png">
   <link href="./assets/favicon.ico" rel="icon">
 
-  <title>Softliner</title>  
+  <title>Softliner - Reinventing digital reach </title>  
 
-<link href="./main.3f6952e4.css" rel="stylesheet"></head>
+<link href="./main.3f6952e4.css" rel="stylesheet">
+<link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v5.4.1/css/all.css"
+    />
+    </head>
+<style type="text/css">
+      .nav>li{font-size:1.2em!important;font-weight:600}
+      .social-icons {
+          transform: scale(1.5);
+        }
+      .social-icons {
+          display: flex;
+          justify-content: center;
+          align-content: center;
+          flex-direction: row;
+          margin: 0;
+          padding: 0;
+          list-style: none;
+          //transform: scale(2);
+        }
+      .social-icon {
+        opacity: 0;
+        transition: opacity .3s;
+        
+        svg {
+          overflow: visible !important;
+        }
+        
+      .si-circle {
+          //fill: #616161;
+        }
+        
+      .si-splash,
+      .si-grid{
+          display: none;
+          visibility:hidden;
+        }
+      .si-icon {
+          transform-origin: "center center";
+        }
+        
+      }
 
+      .middle {
+          right: 5%;
+          position: absolute;
+          top: 20%;
+          transform: translateY(-50%);
+          /* width: 100%; */
+          text-align: end;
+          display:grid;
+      }
+
+      .btn {
+        display: inline-block;
+        width: 50px;
+        height: 50px;
+        background: #022e49;
+        margin: 10px;
+        border-radius: 0%;
+        box-shadow: 0 5px 15px -5px #022e49;
+        color: white !important;
+        overflow: hidden;
+        position: relative;
+      }
+
+      .btn:hover{
+        border:0.5px solid #022e49;
+        outline:#022e49 ;
+      }
+
+      .btn i {
+        line-height: 35px;
+        font-size: 19px;
+        transition: 0.2s linear;
+      }
+
+      .btn:hover i {
+        transform: scale(1.3);
+        color: #022e49;
+      }
+
+      .btn::before {
+        content: "";
+        position: absolute;
+        width: 120%;
+        height: 120%;
+        background: white;
+        transform: rotate(45deg);
+        left: -110%;
+        top: 90%;
+      }
+
+      .btn:hover::before {
+        animation: aaa 0.7s 1;
+        top: -10%;
+        left: -10%;
+      }
+
+      @keyframes aaa {
+        0% {
+          left: -110%;
+          top: 90%;
+        }
+        50% {
+          left: 10%;
+          top: -30%;
+        }
+        100% {
+          top: -10%;
+          left: -10%;
+        }
+      }
+</style>
 <body class="minimal">
 <div id="site-border-left"></div>
 <div id="site-border-right"></div>
@@ -35,12 +148,12 @@
           <span class="icon-bar"></span>
         </button>
 
-      <div class="collapse navbar-collapse" id="navbar-collapse">
+      <div class="collapse navbar-collapse" id="navbar-collapse" style="animation: fadeIn 2s;">
         <ul class="nav navbar-nav ">
           <li><a href="./index.html" title="">01 : Home</a></li>
           <li><a href="./works.html" title="">02 : Blog</a></li>
           <li><a href="./projects.html" title="">03 : Projects</a></li>
-          <li><a href="./boersma.html" title="">04 : Boersma Group LLC</a></li>
+          <li><a href="./boersma.html" title="">04 : Boersma Group</a></li>
           <li><a href="./contact.html" title="">05 : Contact</a></li>
         </ul>
 
@@ -50,8 +163,24 @@
   </nav>
 </header>
 <!-- Add your site or app content here -->
+  <div class="hero-frame" style="animation: fadeIn 2s;"></div>
   <div class="hero-full-container background-image-container white-text-container" style="background-image: url('./assets/images/5.jpg')">
     <div class="container">
+      <div class="middle" style="animation: fadeIn 2s;">
+        <a class="btn" href="#">
+          <i class="fab fa-facebook-f"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-twitter"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+        <a class="btn" href="#">
+          <i class="fab fa-youtube"></i>
+        </a>
+
+      </div>
       <div class="row">
         <div class="col-xs-12">
           <div class="hero-full-wrapper">
